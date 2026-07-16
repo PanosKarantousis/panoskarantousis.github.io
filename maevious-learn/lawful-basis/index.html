@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawful-Basis Map — Maevious Learn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site">
+    <a class="brand" href="../">Maevious Learn</a>
+    <nav>
+      <a href="../privacy/">Privacy</a>
+      <a href="../terms/">Terms</a>
+      <a href="../support/">Support</a>
+    </nav>
+  </header>
+
+  <h1>Maevious Learn — Lawful-Basis Map</h1>
+  <p class="updated">Controller: Daralexion Ltd · Last updated: 16 July 2026 · Version 1.0</p>
+
+  <p>This map records, for each category of personal data the app processes, the
+  <strong>UK GDPR Article 6 lawful basis</strong> (and, where relevant, the position on special
+  category data and children). It is an accountability document (UK GDPR
+  Art. 5(2)) and underpins the <a href="../privacy/">Privacy Policy</a> and our
+  internal Data Protection Impact Assessment (available on request).</p>
+
+  <h2>Summary table</h2>
+  <div class="tablewrap">
+    <table>
+      <tr><th>#</th><th>Processing</th><th>Data</th><th>Data subject</th><th>Art. 6 basis</th><th>Notes</th></tr>
+      <tr><td>1</td><td>Create &amp; authenticate the parent account</td><td>Email, password hash</td><td>Parent</td><td><strong>6(1)(b) Contract</strong></td><td>Necessary to provide the app to the account holder</td></tr>
+      <tr><td>2</td><td>Store the parent's display name</td><td>Display name</td><td>Parent</td><td><strong>6(1)(b) Contract</strong> (optional convenience)</td><td>Optional; can be empty</td></tr>
+      <tr><td>3</td><td>Create &amp; manage learner profiles</td><td>Nickname, year level, avatar</td><td>Child (managed by parent)</td><td><strong>6(1)(b) Contract</strong></td><td>Provided by the parent under the parent's agreement to the Terms; minimised</td></tr>
+      <tr><td>4</td><td>Record practice progress</td><td>Mastery, XP, attempts, streak</td><td>Child</td><td><strong>6(1)(b) Contract</strong></td><td>Core function — showing progress and resuming</td></tr>
+      <tr><td>5</td><td>Send the weekly progress summary email</td><td>Email + aggregate progress</td><td>Parent</td><td><strong>6(1)(b) Contract</strong> (a service email) with <strong>opt-out</strong></td><td>Not marketing; strictly informational; parent can turn off</td></tr>
+      <tr><td>6</td><td>Keep the service secure (access control, abuse prevention)</td><td>Account identifiers</td><td>Parent/Child</td><td><strong>6(1)(f) Legitimate interests</strong></td><td>Assessment on file; low-risk, expected</td></tr>
+      <tr><td>7</td><td>Fix faulty content you report</td><td>Question id, reason, account id</td><td>Parent</td><td><strong>6(1)(f) Legitimate interests</strong></td><td>Improves safety/quality of a children's service</td></tr>
+      <tr><td>8</td><td>Handle contact &amp; concern messages</td><td>Category + free-text message (adult-authored)</td><td>Parent</td><td><strong>6(1)(b)/(f)</strong> and, for a safeguarding/complaint, <strong>6(1)(c) legal obligation</strong> where engaged</td><td>Authored by the adult, not the child</td></tr>
+      <tr><td>9</td><td>Optional referral feature</td><td>Referral code, count, referred-by</td><td>Parent</td><td><strong>6(1)(f) Legitimate interests</strong> / <strong>6(1)(b)</strong></td><td>Optional; referrer-only reward; no friend details harvested</td></tr>
+      <tr><td>10</td><td>Privacy-preserving product analytics</td><td>Random account id + closed event set (no PII, no child data)</td><td>Parent (pseudonymous)</td><td><strong>6(1)(f) Legitimate interests</strong></td><td>Assessment on file; EU-hosted; no autocapture, no profiling of children</td></tr>
+      <tr><td>11</td><td>School marketing (Maevious Ltd)</td><td>Handled by <strong>Maevious Ltd on its website</strong>, never in this app</td><td>Parent</td><td><strong>6(1)(a) Consent</strong> (PECR-compliant, separate, unbundled)</td><td>Out of scope for Daralexion Ltd</td></tr>
+    </table>
+  </div>
+
+  <h2>Notes on children and special categories</h2>
+  <ul>
+    <li><strong>No special-category data</strong> (Art. 9) is processed: no health, biometric,
+    religious, political, or similar data. Year level is an educational filter, not
+    a special category.</li>
+    <li><strong>Children.</strong> Identifiable and consent-bearing data sits on the <strong>adult</strong>.
+    The child's footprint is a nickname + level + cosmetic avatar + progress.
+    Consent (Art. 6(1)(a)) is deliberately <strong>not</strong> relied on for any child-facing
+    processing; the basis is contract with the adult account holder. This avoids
+    relying on a child's ability to consent (UK age of ISS consent is 13) and keeps
+    marketing consent entirely on Maevious Ltd's website.</li>
+    <li><strong>Marketing</strong> to children is never performed. Any marketing is adult-only,
+    consent-based, and collected by the other controller.</li>
+  </ul>
+
+  <h2>Legitimate Interests Assessments (LIAs)</h2>
+  <p>Short LIAs are held for items 6, 7, 9 and 10. Each concludes: the interest is
+  legitimate (security / content quality / product improvement / optional growth),
+  the processing is necessary and minimised, and it does not override the interests
+  of parents or children because it involves <strong>no child PII, no profiling of
+  children, no tracking SDKs, and EU hosting</strong>. Analytics can be operated without a
+  child ever being identified.</p>
+
+  <h2>Review</h2>
+  <p>Reviewed whenever the data model or analytics event set changes, and at least
+  annually.</p>
+
+  <footer class="site">
+    Daralexion Ltd · Company no. 17279214 · 14b-14c Faversham Road, London SE6 4XF, United Kingdom ·
+    <a href="mailto:support@maevious.com">support@maevious.com</a> ·
+    <a href="../">All Maevious Learn policies</a>
+  </footer>
+</body>
+</html>
