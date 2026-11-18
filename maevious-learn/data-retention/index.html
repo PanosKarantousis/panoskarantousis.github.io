@@ -17,7 +17,7 @@
   </header>
 
   <h1>Maevious Learn — Data Retention &amp; Deletion Policy</h1>
-  <p class="updated">Controller: Daralexion Ltd · Last updated: 13 October 2026 · Version 1.0</p>
+  <p class="updated">Controller: Daralexion Ltd · Last updated: 18 November 2026 · Version 1.1</p>
 
   <p>This policy sets out how long Daralexion Ltd keeps personal data collected
   through the Maevious Learn app, and how it is deleted. It satisfies the app
@@ -36,12 +36,13 @@
       <tr><th>Data</th><th>Retained while…</th><th>On deletion</th></tr>
       <tr><td>Parent account (email, password hash, display name)</td><td>The account is active</td><td>Removed immediately on account deletion</td></tr>
       <tr><td>Learner profiles (nickname, year level, avatar)</td><td>The account is active</td><td>Cascade-deleted with the account</td></tr>
-      <tr><td>Progress, XP, streaks</td><td>The account is active</td><td>Cascade-deleted with the account</td></tr>
+      <tr><td>Progress, XP, streaks, the daily goal, today's XP (one value, overwritten each day)</td><td>The account is active</td><td>Cascade-deleted with the account</td></tr>
       <tr><td>Question reports you raised</td><td>The account is active (used to fix content)</td><td>Cascade-deleted with the account</td></tr>
       <tr><td>Contact / concern messages</td><td>Until resolved + a short admin period, then the account's lifetime</td><td>Cascade-deleted with the account</td></tr>
       <tr><td>Referral code / count</td><td>The account is active</td><td>Cascade-deleted with the account</td></tr>
       <tr><td>Analytics events (PostHog EU)</td><td><strong>Not currently collected</strong> — analytics is switched off in the published app. If switched on: aggregate product metrics keyed to a random id, <strong>no name/email/child data</strong></td><td>n/a while switched off; if switched on, not linkable to you after deletion and retained under PostHog's standard EU-hosted retention policy</td></tr>
       <tr><td>Weekly-summary email delivery logs (Resend)</td><td>Short operational window</td><td>Per Resend's standard retention policy</td></tr>
+      <tr><td>Parent-shared progress report (one-page PDF)</td><td><strong>Never held by us</strong> — created on the parent's device and never uploaded by the app. The app's temporary copy exists only while the share sheet is open</td><td>The temporary file is deleted as soon as the share sheet closes on iPhone and iPad, and on Android about half an hour after the parent shares it (the app that receives it may still be reading it), or the next time the child's page is opened after that. If making the report fails, it is deleted straight away. Copies the parent chooses to send are held by the recipient, outside our control</td></tr>
     </table>
   </div>
   <p><strong>Learning content</strong> (lessons, questions) is <strong>not personal data</strong>. It is never

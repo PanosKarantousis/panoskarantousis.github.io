@@ -17,7 +17,7 @@
   </header>
 
   <h1>Maevious Learn — Lawful-Basis Map</h1>
-  <p class="updated">Controller: Daralexion Ltd · Last updated: 13 October 2026 · Version 1.0</p>
+  <p class="updated">Controller: Daralexion Ltd · Last updated: 18 November 2026 · Version 1.1</p>
 
   <p>This map records, for each category of personal data the app processes, the
   <strong>UK GDPR Article 6 lawful basis</strong> (and, where relevant, the position on special
@@ -32,7 +32,7 @@
       <tr><td>1</td><td>Create &amp; authenticate the parent account</td><td>Email, password hash</td><td>Parent</td><td><strong>6(1)(b) Contract</strong></td><td>Necessary to provide the app to the account holder</td></tr>
       <tr><td>2</td><td>Store the parent's display name</td><td>Display name</td><td>Parent</td><td><strong>6(1)(b) Contract</strong> (optional convenience)</td><td>Optional; can be empty</td></tr>
       <tr><td>3</td><td>Create &amp; manage learner profiles</td><td>Nickname, year level, avatar</td><td>Child (managed by parent)</td><td><strong>6(1)(b) Contract</strong></td><td>Provided by the parent under the parent's agreement to the Terms; minimised</td></tr>
-      <tr><td>4</td><td>Record practice progress</td><td>Mastery, XP, attempts, streak</td><td>Child</td><td><strong>6(1)(b) Contract</strong></td><td>Core function — showing progress and resuming</td></tr>
+      <tr><td>4</td><td>Record practice progress</td><td>Mastery, XP, attempts, streak, the chosen daily goal, today's XP (one value, overwritten daily)</td><td>Child</td><td><strong>6(1)(b) Contract</strong></td><td>Core function — showing progress and resuming</td></tr>
       <tr><td>5</td><td>Send the weekly progress summary email</td><td>Email + aggregate progress</td><td>Parent</td><td><strong>6(1)(b) Contract</strong> (a service email) with <strong>opt-out</strong></td><td>Not marketing; strictly informational; parent can turn off</td></tr>
       <tr><td>6</td><td>Keep the service secure (access control, abuse prevention)</td><td>Account identifiers</td><td>Parent/Child</td><td><strong>6(1)(f) Legitimate interests</strong></td><td>Assessment on file; low-risk, expected</td></tr>
       <tr><td>7</td><td>Fix faulty content you report</td><td>Question id, reason, account id</td><td>Parent</td><td><strong>6(1)(f) Legitimate interests</strong></td><td>Improves safety/quality of a children's service</td></tr>
@@ -40,6 +40,7 @@
       <tr><td>9</td><td>Optional referral feature</td><td>Referral code, count, referred-by</td><td>Parent</td><td><strong>6(1)(f) Legitimate interests</strong> / <strong>6(1)(b)</strong></td><td>Optional; referrer-only reward; no friend details harvested</td></tr>
       <tr><td>10</td><td>Privacy-preserving product analytics — <strong>switched off in the published app; not currently collected</strong></td><td>Random account id + closed event set (no PII, no child data)</td><td>Parent (pseudonymous)</td><td><strong>6(1)(f) Legitimate interests</strong> (if switched on)</td><td>Assessment on file; EU-hosted; no autocapture, no profiling of children</td></tr>
       <tr><td>11</td><td>School marketing (Maevious Ltd)</td><td>Handled by <strong>Maevious Ltd on its website</strong>, never in this app</td><td>Parent</td><td><strong>6(1)(a) Consent</strong> (PECR-compliant, separate, unbundled)</td><td>Out of scope for Daralexion Ltd</td></tr>
+      <tr><td>12</td><td>Parent-made progress report (one-page PDF) the parent may share</td><td>Nickname, curriculum + year/grade label, topic names and mastery states, plain-English focus areas + home tips, date — <strong>no ids, codes, contact details or links</strong></td><td>Child (shared by the parent)</td><td><strong>6(1)(b) Contract</strong> (a parent-requested feature of the app)</td><td>Generated <strong>on the device only</strong> and never uploaded by the app; Daralexion receives no copy. It leaves the device only when the parent picks a destination in the share sheet. The app's temporary file is deleted when the share sheet closes (iPhone/iPad) or about half an hour after sharing (Android)</td></tr>
     </table>
   </div>
 
